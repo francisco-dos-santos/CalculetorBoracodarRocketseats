@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Francisco dos Santos">
+    <meta name="description" content="calculadora feito no bora codar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <section id="main">
+
+        <article id="container">
+
+            <div id="sesss-calcula">
+
+                <!-- mostra a operção -->
+                <div class="cont-operation">
+                    
+                </div>
+
+                <!-- mostra o resutado final com igualdade -->
+                <div class="cont-result">
+
+                    <div id="resul-final">
+                        <p>0</p>
+                    </div>
+                    <div id="igual-resul">
+                        <p>=</p>
+                    </div>
+                </div>
+
+                <!-- os botoes -->
+                <div id="cont-buttons">
+                    <button onClick="clean()" value="ce">ce</button>
+                    <button id="borrar" value="c">c</button>
+                    <button value="%" id="percento" >%</button>
+                    <button id="division" class="cor-dif botao" value="÷">÷</button>
+                    <!-- 2 -->
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button id="mult" class="cor-dif botao" value="*">×</button>
+                    <!-- 3 -->
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button id="soma" class="cor-dif botao" value="+">+</button>
+                    <!-- 4 -->
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button id="sub" class="cor-dif botao" value="-" value="-">–</button>
+                    <!-- 5 -->
+                    <button value="+/-">+⁄-</button>
+                    <button value="0">0</button>
+                    <button value=".">,</button>
+                    <button id="igual" class="cor-dif botao" value="=">=</button>
+                </div>
+
+            </div>
+        </article>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

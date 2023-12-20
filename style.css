@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --text-cor:#ebebeb;
+    --color-siza:#666666;
+    --cor-destaque:#462a75;
+}
+body{
+    background-image: linear-gradient(180deg,#181719,#323238,#39363D,#202024);
+    color:var(--text-cor);
+    height:100vh;
+    font-family:'Roboto',sans-serif;
+}
+
+#main
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+#container
+{
+    background:#332c44;
+    width:100%;
+    max-width:360px;
+    padding:30px 10px 25px;
+    /* height:400px; */
+    border-radius:50px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 14px 14px 0px rgba(0, 0, 0, 0.13), 0px 32px 19px 0px rgba(0, 0, 0, 0.08), 0px 57px 23px 0px rgba(0, 0, 0, 0.02), 0px 89px 25px 0px rgba(0, 0, 0, 0.00);
+}
+#container #sesss-calcula
+{
+    /* border: 1px solid red; */
+    width:100%;
+    /* height: 400px; */
+    /* margin:auto; */
+}
+
+/* editando a sesão de ver a operação */
+#sesss-calcula .cont-operation{
+   
+    /* border:1px solid red; */
+    padding:1px 10px 0px;
+    height:30px;
+    text-align:right;
+    font-weight:500;
+    font-size:1.4rem;
+    letter-spacing:2px;
+    color:var(--color-siza);
+    overflow-x:auto;
+    cursor:pointer;
+}
+::-webkit-scrollbar
+{
+    height:2px;
+    width: 2px;
+   
+}
+::-webkit-scrollbar-thumb
+{
+    background:#ebebeb;
+    
+}
+::-webkit-scrollbar-track
+{
+    background-color: #666666;
+} 
+/*  mostra o resutado final com igualdade*/
+#sesss-calcula .cont-result
+{
+    width:100%;
+    max-width:inherit;
+    /* border: 1px solid red; */
+    padding:10px 15px;
+    display: flex;
+    align-items:center;
+    flex-direction:row-reverse;
+    margin-bottom:10px;
+     cursor: pointer;
+}
+#sesss-calcula .cont-result #resul-final
+{
+    font-size:2.2rem;
+    font-weight: 600;
+    flex:80%;
+    overflow-x: auto;
+    text-align:right;
+}
+#sesss-calcula .cont-result #igual-resul
+{
+    color: var(--color-siza);
+    font-weight:700;
+    font-size:2rem;
+    flex: 20%;
+}
+
+/* editando od botões */
+#sesss-calcula #cont-buttons
+{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap:10px;
+}
+#cont-buttons button
+{
+    width:70px;
+    height:70px;
+    cursor:pointer;
+    align-self: center;
+    justify-self: center;
+    border: 0;
+    border-radius: 50%;
+    font-weight:400;
+    color:var(--text-cor);
+    background:#332c44;
+    font-size:2rem;
+    text-transform: uppercase;
+    box-shadow: 0 0px 10px 2px #282530,0 0px 20px 4px rgba(0, 0, 0, 0.08);
+}
+#cont-buttons button:first-child
+{
+    color:#7046b9;
+}
+#cont-buttons button.cor-dif
+{
+    background: var(--cor-destaque);
+}
+#cont-buttons button:nth-child(20)
+{
+    background:#7a47d0;
+}
